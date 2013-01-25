@@ -14,15 +14,15 @@ body {
 	background:none;
 }
 
-#header .nav-bar li, #header .nav-bar li:last-child {
+#header .nav-bar li, #header .nav-bar li:last-child, #sidebar .nav-bar li, #sidebar .nav-bar li:last-child {
 	border:none;
 }
 
-#header .nav-bar li {
+#header .nav-bar li, #sidebar .nav-bar, #sidebar .nav-bar li:hover  {
 	background-color:transparent;
 }
 
-#header .nav-bar li a {
+#header .nav-bar li a, #sidebar .nav-bar li a {
 	color:#222;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size:18px;
@@ -50,6 +50,14 @@ body {
 	margin:0px -15px 0px -15px;
 	height:44px;
 	border-bottom:1px solid #ccc;
+	box-shadow:0px 0px 6px #999;
+	position:absolute;
+	top:0px;
+	width:100%;
+}
+
+#sidebar {
+
 }
 
 #header-mobile .sidebar-button {
@@ -69,16 +77,11 @@ body {
 }
 
 section[role=main] {
-	/*padding:0px;*/
+
 }
 
 section[role=main] h2 {
 	font-family:impact;
-}
-
-
-.page-wrapper {
-	
 }
 
 footer {
@@ -90,4 +93,11 @@ footer {
 
 footer p {
 	font-size:12px;
+}
+
+/* RESPONSIVE STYLES */
+@media only screen and (max-width: 767px) {
+	section[role=main] {
+		padding-top:46px !important;
+	}
 }
