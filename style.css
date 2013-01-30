@@ -100,4 +100,8 @@ footer p {
 	section[role=main] {
 		padding-top:46px !important;
 	}
+
+	footer {
+		display:none;
+	}
 }
