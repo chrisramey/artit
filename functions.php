@@ -11,4 +11,8 @@ function artit() {
 
 	// Set timezone
 	date_default_timezone_set('America/Chicago');
+
+	// Define colors for sections
+	global $colors;
+	$colors = array('blue','charcoal','pink');
 }

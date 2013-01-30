@@ -34,25 +34,26 @@
 	</head>
 	<body class="off-canvas hide-extras">
 		<div class="container">
-			<header class="row hide-for-small" id="header">
-				<div class="four columns phone-two">
-					<img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="banner" />
-				</div>
-				<div class="eight columns">
-					<?php
-					$options = array(
-						'container'			=> 'nav',
-						'container_class'	=> 'hide-for-small',
-						'menu_class'		=> 'nav-bar'
-					);
-					wp_nav_menu($options);
-					?>
-					<!--<h4><?php echo strtolower(get_bloginfo('description')) ?></h4>--> 
-				</div>
-			</header>
-			<div class="row">
-				<section role="main">
-					<div id="header-mobile" class="show-for-small">
-						<a class="sidebar-button button" id="sidebarButton" href="#sidebar" ></a>
+			<header class="hide-for-small" id="header">
+				<div class="row">
+					<div class="four columns phone-two">
 						<img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="banner" />
 					</div>
+					<div class="eight columns">
+						<?php
+						$options = array(
+							'container'			=> 'nav',
+							'container_class'	=> 'hide-for-small',
+							'menu_class'		=> 'nav-bar'
+						);
+						wp_nav_menu($options);
+						?>
+						<!--<h4><?php echo strtolower(get_bloginfo('description')) ?></h4>--> 
+					</div>
+				</div>
+			</header>
+			<section role="main">
+				<div id="header-mobile" class="show-for-small">
+					<a class="sidebar-button button" id="sidebarButton" href="#sidebar" ></a>
+					<img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="banner" />
+				</div>
